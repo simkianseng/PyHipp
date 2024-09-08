@@ -2,15 +2,15 @@
 
 # Submit this script with: sbatch <this-filename>
 
-#SBATCH --time=5:00:00   # walltime
+#SBATCH --time=24:00:00   # walltime
 #SBATCH --ntasks=1   # number of processor cores (i.e. tasks)
 #SBATCH --nodes=1   # number of nodes
 #SBATCH --cpus-per-task=1   # number of CPUs for this task
-#SBATCH -J "rse-slurm"   # job name
+#SBATCH -J "rse"   # job name
 
 ## /SBATCH -p general # partition (queue)
-#SBATCH -o rse-slurm.%N.%j.out # STDOUT
-#SBATCH -e rse-slurm.%N.%j.err # STDERR
+#SBATCH -o rse.%N.%j.out # STDOUT
+#SBATCH -e rse.%N.%j.err # STDERR
 
 # LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
 python -u -c "import PyHipp as pyh; \
