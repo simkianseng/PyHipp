@@ -28,4 +28,4 @@ pyh.raycast(1); \
 print(time.localtime()); \
 print(time.time()-t0);"
 
-aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:515966537732:awsnotify --message "RPLParallelJobDone"
+aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:961341527462:awsnotify --message "RPLParallelJobDone"

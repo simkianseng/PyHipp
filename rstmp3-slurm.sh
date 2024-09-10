@@ -6,11 +6,11 @@
 #SBATCH --ntasks=1   # number of processor cores (i.e. tasks)
 #SBATCH --nodes=1   # number of nodes
 #SBATCH --cpus-per-task=5   # number of CPUs for this task
-#SBATCH -J "rs3a"   # job name
+#SBATCH -J "rstmp3"   # job name
 
 ## /SBATCH -p general # partition (queue)
-#SBATCH -o rs3a-slurm.%N.%j.out # STDOUT
-#SBATCH -e rs3a-slurm.%N.%j.err # STDERR
+#SBATCH -o rstmp3-slurm.%N.%j.out # STDOUT
+#SBATCH -e rstmp3-slurm.%N.%j.err # STDERR
 
 # LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
 python -u -c "import PyHipp as pyh; \
@@ -19,7 +19,7 @@ import time; \
 import os; \
 t0 = time.time(); \
 print(time.localtime()); \
-DPT.objects.processDirs(dirs=None, objtype=pyh.RPLSplit, channel=[*range(65,97)], SkipHPC=False, HPCScriptsDir = '/data/src/PyHipp/', SkipLFP=False, SkipHighPass=False, SkipSort=False); \
+DPT.objects.processDirs(dirs=None, objtype=pyh.RPLSplit, channel=[81,83,111,124], SkipHPC=False, HPCScriptsDir = '/data/src/PyHipp/', SkipLFP=False, SkipHighPass=False, SkipSort=False); \
 print(time.localtime()); \
 print(time.time()-t0);"
 
