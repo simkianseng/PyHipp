@@ -9,8 +9,8 @@
 #SBATCH -J "rse"   # job name
 
 ## /SBATCH -p general # partition (queue)
-#SBATCH -o rse.%N.%j.out # STDOUT
-#SBATCH -e rse.%N.%j.err # STDERR
+#SBATCH -o rse-slurm.%N.%j.out # STDOUT
+#SBATCH -e rse-slurm.%N.%j.err # STDERR
 
 # LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
 python -u -c "import PyHipp as pyh; \
