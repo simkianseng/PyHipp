@@ -19,7 +19,7 @@ import time; \
 import os; \
 t0 = time.time(); \
 print(time.localtime()); \
-DPT.objects.processDirs(dirs=None, objtype=pyh.RPLSplit, channel=[14,50,52,66,68], SkipHPC=False, HPCScriptsDir = '/data/src/PyHipp/', SkipLFP=False, SkipHighPass=False, SkipSort=False); \
+DPT.objects.processDirs(dirs=None, objtype=pyh.RPLSplit, channel=[75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91], SkipHPC=False, HPCScriptsDir = '/data/src/PyHipp/', SkipLFP=False, SkipHighPass=False, SkipSort=False); \
 print(time.localtime()); \
 print(time.time()-t0);"
 

@@ -6,11 +6,11 @@
 #SBATCH --ntasks=1   # number of processor cores (i.e. tasks)
 #SBATCH --nodes=1   # number of nodes
 #SBATCH --cpus-per-task=5   # number of CPUs for this task
-#SBATCH -J "rstmp3"   # job name
+#SBATCH -J "rstmp4"   # job name
 
 ## /SBATCH -p general # partition (queue)
-#SBATCH -o rstmp3-slurm.%N.%j.out # STDOUT
-#SBATCH -e rstmp3-slurm.%N.%j.err # STDERR
+#SBATCH -o rstmp4-slurm.%N.%j.out # STDOUT
+#SBATCH -e rstmp4-slurm.%N.%j.err # STDERR
 
 # LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
 python -u -c "import PyHipp as pyh; \
